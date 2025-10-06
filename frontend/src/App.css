@@ -1,0 +1,68 @@
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #0f0f10;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Reader Specific Styles */
+.chapter h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+    line-height: 1.2;
+}
+
+.chapter p {
+    margin-bottom: 1.2em;
+    text-indent: 1.5em;
+}
+
+.chapter p:first-of-type {
+    text-indent: 0;
+}
+
+/* Selection highlighting */
+::selection {
+    background-color: rgba(255, 220, 100, 0.4);
+}
+
+/* Smooth transitions */
+* {
+    transition-property: background-color, border-color, color;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+
+button, a {
+    transition-property: all;
+    transition-duration: 200ms;
+}
